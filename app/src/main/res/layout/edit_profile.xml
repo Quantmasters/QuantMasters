@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#fff"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_left_arrow"
+            android:tint="#a86cff" />
+
+        <TextView
+            android:id="@+id/chapter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Edit Profile"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel"
+        android:visibility="invisible"
+        android:background="#fff">
+
+        <LinearLayout
+            android:id="@+id/LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pr_det"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Update Info"
+                android:textColor="#757575"
+                android:textSize="23sp"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/Full_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:background="@drawable/edit_back"
+                android:padding="10dp"
+                android:layout_marginTop="18dp"
+                android:textColor="#000"
+                android:textColorHint="#757575"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#bdbdbd"
+                android:layout_height="1dp"/>
+
+            <EditText
+                android:id="@+id/Last_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:background="@drawable/edit_back"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#757575"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#bdbdbd"
+                android:layout_height="1dp"/>
+
+
+
+            <EditText
+                android:id="@+id/Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:longClickable="false"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:background="@drawable/edit_back"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#757575"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#bdbdbd"
+                android:layout_height="1dp"/>
+
+            <EditText
+                android:id="@+id/Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="DOB"
+                android:inputType="date"
+                android:longClickable="false"
+                android:maxLength="13"
+                android:focusable="false"
+                android:maxLines="1"
+                android:background="@drawable/edit_back"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#757575"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#bdbdbd"
+                android:layout_height="1dp"/>
+
+            <EditText
+                android:id="@+id/USN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textAllCaps="true"
+                android:hint="USN"
+                android:inputType="text"
+                android:longClickable="false"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:background="@drawable/edit_back"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#757575"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#bdbdbd"
+                android:layout_height="1dp"/>
+
+
+            <AutoCompleteTextView
+                android:id="@+id/Branch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Qualification"
+                android:inputType="textAutoComplete"
+                android:longClickable="false"
+                android:background="@drawable/edit_back"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#757575"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#bdbdbd"
+                android:layout_height="1dp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/YOP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Year of Passing"
+                android:inputType="textAutoComplete"
+                android:longClickable="false"
+                android:background="@drawable/edit_back"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#757575"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#bdbdbd"
+                android:layout_height="1dp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/College"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="College"
+                android:inputType="textAutoComplete"
+                android:longClickable="false"
+                android:background="@drawable/edit_back"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#757575"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#bdbdbd"
+                android:layout_height="1dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="0dp">
+
+                <CheckBox
+                    android:id="@+id/sub"
+                    android:layout_width="wrap_content"
+                    android:textColor="#757575"
+                    android:textSize="15sp"
+                    android:checked="true"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/Get_Started"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/update_button_background"
+                android:padding="12dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Update"
+                android:layout_marginBottom="10dp"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/spin_kit"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:elevation="2sp"
+        android:indeterminateTint="#a86cff"
+        android:layoutDirection="ltr" />
+</RelativeLayout>

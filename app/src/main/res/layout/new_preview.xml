@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ProgressBar
+        android:id="@+id/spin_kit2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/download"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:elevation="2sp"
+        android:indeterminateTint="#EEBC4F"
+        android:layoutDirection="ltr" />
+
+
+    <RelativeLayout
+        android:id="@+id/video_container"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@android:color/black"
+        android:gravity="center_horizontal|center_vertical"
+        android:keepScreenOn="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#bdbdbd"
+            android:scaleType="centerCrop"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/Play_arrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="2dp"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_password" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.7"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/resource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Play_arrow"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:text="Resource Locked"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/download"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rel"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/enroll_button"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:text="Download Notes"
+        android:textColor="#008D2D"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/wish_list"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/download"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/gradian_one"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="Click Here to Unlock Resources >"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/video_container"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="6dp"
+        android:textColor="#222222"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/rel"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/title"
+        android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+
+        android:id="@+id/rating"
+
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_star"
+            android:id="@+id/star1"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_star"
+            android:id="@+id/star2"
+            android:layout_marginStart="4dp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_star"
+            android:id="@+id/star3"
+            android:layout_marginStart="4dp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_star"
+            android:id="@+id/star4"
+            android:layout_marginStart="4dp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_star"
+            android:id="@+id/star5"
+            android:layout_marginStart="4dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/rate_count"
+            android:textColor="#9E9E9E"
+            android:layout_gravity="center_vertical"
+            android:textSize="17sp"
+            android:layout_marginStart="6dp"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+    </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+
+            android:src="@drawable/ic_speech_balloon"
+            android:id="@+id/comment_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/comment"
+            android:textColor="#FA8432"
+            android:textSize="17sp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_toStartOf="@+id/comment_icon"
+            android:layout_centerVertical="true"
+            android:text="Comment"
+            android:layout_marginStart="6dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/wish_list"
+        android:layout_marginTop="5dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+
+
+</RelativeLayout>

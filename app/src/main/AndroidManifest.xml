@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.Quant.quantmasters">
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_qm_upadted"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_qm_upadted_round"
+        android:supportsRtl="true"
+
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.Quant.quantmasters.First_Activity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme_Five">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.Quant.quantmasters.New_Main_Activity"
+            android:theme="@style/AppTheme_Five" />
+        <activity
+            android:name="com.Quant.quantmasters.Login_Activity"
+            android:theme="@style/AppTheme_Five"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.Quant.quantmasters.Verify_Account"
+            android:theme="@style/AppTheme_Five"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.Quant.quantmasters.Reset_Password"
+            android:theme="@style/AppTheme_Five"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.Quant.quantmasters.Sign_Up"
+            android:theme="@style/AppTheme_Five"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+
+        <activity
+            android:name="com.Quant.quantmasters.Sign_Up_Two"
+            android:theme="@style/AppTheme_Five"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity android:name="com.Quant.quantmasters.Video_Activity" />
+        <activity
+            android:name="com.Quant.quantmasters.Test_Chapters"
+            android:theme="@style/AppTheme_Five" />
+        <activity
+            android:name="com.Quant.quantmasters.Test_Activity"
+            android:theme="@style/AppTheme_Five" />
+
+        <activity
+            android:name="com.Quant.quantmasters.Student_Achievers"
+            android:theme="@style/AppTheme_Five" />
+        <activity
+            android:name="com.Quant.quantmasters.Answer"
+            android:theme="@style/AppTheme_Five" />
+
+        <activity android:name="com.Quant.quantmasters.Test_Done"
+            android:theme="@style/AppTheme_zz" />
+        <activity android:name="com.Quant.quantmasters.Payment_Done"
+            android:theme="@style/AppTheme_zz" />
+        <activity
+            android:name="com.Quant.quantmasters.Model_Question"
+            android:theme="@style/AppTheme_Five" />
+        <activity
+            android:name="com.Quant.quantmasters.Chapter_Level"
+            android:theme="@style/AppTheme_Five" />
+        <activity
+            android:name=".Edit_Profile"
+            android:theme="@style/AppTheme_Five" />
+
+        <activity
+            android:name="com.Quant.quantmasters.Level_Activity"
+            android:theme="@style/AppTheme_Five" />
+        <activity
+            android:name="com.Quant.quantmasters.Model_Test_Activity"
+            android:theme="@style/AppTheme_Five" />
+        <activity
+            android:name="com.Quant.quantmasters.Company_Specific"
+            android:theme="@style/AppTheme_Five" />
+
+        <activity
+            android:name="com.Quant.quantmasters.Profile_Image"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.Quant.quantmasters.Company_Specific_Test"
+            android:theme="@style/AppTheme_Five" />
+
+        <activity
+            android:name="com.Quant.quantmasters.Competitive"
+            android:theme="@style/AppTheme_Five" />
+
+        <activity
+            android:name="com.Quant.quantmasters.Marks_Activity"
+            android:theme="@style/AppTheme_Five" />
+
+        <activity
+            android:name="com.Quant.quantmasters.Competitive_Level"
+            android:theme="@style/AppTheme_Five" />
+        <activity
+            android:name="com.Quant.quantmasters.Competitive_Test"
+            android:theme="@style/AppTheme_Five" />
+        <activity
+            android:name="com.Quant.quantmasters.Preview_Activity"
+            android:theme="@style/AppTheme_Five" />
+        <activity
+            android:name="com.Quant.quantmasters.New_Dashboard"
+            android:theme="@style/AppTheme_Five" />
+        <activity
+            android:name="com.Quant.quantmasters.New_Profile"
+            android:theme="@style/AppTheme_Five" />
+        <activity
+            android:name=".New_Preview"
+            android:theme="@style/AppTheme_One" />
+
+        <activity
+            android:name="com.Quant.quantmasters.Review_Activity"
+            android:theme="@style/AppTheme_Five" />
+
+        <activity
+            android:name="com.Quant.quantmasters.Testimony"
+            android:theme="@style/AppTheme_Five" />
+
+        <activity
+            android:name="com.Quant.quantmasters.Live_Workshop"
+            android:theme="@style/AppTheme_Five" />
+
+        <activity
+            android:name="com.Quant.quantmasters.Free_Video"
+            android:theme="@style/AppTheme_Five" />
+        <activity
+            android:name="com.Quant.quantmasters.Free_Test"
+            android:theme="@style/AppTheme_Five" />
+        <activity
+            android:name="com.Quant.quantmasters.Free_Test_Papers"
+            android:theme="@style/AppTheme_Five" />
+
+        <activity
+            android:name="com.Quant.quantmasters.Payment_Activity"
+            android:theme="@style/AppTheme_One" />
+
+        <activity
+            android:name="com.Quant.quantmasters.Comment"
+            android:theme="@style/AppTheme_Five" />
+        <activity
+            android:name="com.Quant.quantmasters.Solution"
+            android:theme="@style/AppTheme_Five" />
+        <activity
+            android:name="com.Quant.quantmasters.Reply_Activity"
+            android:theme="@style/AppTheme_Five" />
+
+
+        <activity
+            android:name=".UploadToServer"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.Quant.quantmasters.VideoPlayerActivity"
+            android:theme="@style/AppTheme_Five"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize|screenLayout|uiMode" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_xyTDyDQBzefpg6" />
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>

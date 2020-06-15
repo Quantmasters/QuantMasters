@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/fragment_notifications">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="#F1F2F4"
+        android:layout_below="@+id/rello"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:id="@+id/rello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="15dp"
+            android:background="#fff"
+            android:elevation="2dp">
+
+
+
+            <RelativeLayout
+                android:id="@+id/image_layout"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/round"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:padding="4dp"
+                    android:id="@+id/image_pic"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+
+                <TextView
+                    android:id="@+id/profile_pic_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:padding="1dp"
+                    android:text=""
+                    android:textColor="#E64A19"
+                    android:textSize="40sp" />
+
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/round_one"
+                    android:id="@+id/edit_rel"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:layout_width="15sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/edit_white"
+                        android:layout_height="15sp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_layout"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:paddingBottom="25dp"
+                android:maxLines="2"
+                android:textColor="#E64A19"
+                android:textSize="25sp"
+                android:text=""
+                android:textStyle="normal" />
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/rel3"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="15dp"
+            android:background="#fff"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:layout_below="@+id/rello"
+            android:elevation="5dp">
+
+
+            <LinearLayout
+                android:id="@+id/facebook"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="40dp"
+                android:padding="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ffz"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="0dp"
+                    android:src="@drawable/ic_facebook" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Facebook"
+                    android:id="@+id/facebook_text"
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#E64A19"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linkedin"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ffs"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="0dp"
+                    android:src="@drawable/ic_linkedin" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="LinkedIn"
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"
+                    android:id="@+id/linkedin_text"
+                    android:textColor="#E64A19"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/website"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginStart="40dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ffw"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="0dp"
+                    android:src="@drawable/ic_worldwide" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Website"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/website_text"
+                    android:textColor="#E64A19"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+        android:id="@+id/rel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_below="@+id/rel3"
+        android:elevation="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="#29303B"
+            android:id="@+id/support"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:text="Support"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:id="@+id/share"
+            android:layout_marginTop="20dp"
+
+            android:textColor="#29303B"
+            android:layout_marginStart="20dp"
+            android:text="Share the App"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/privacy"
+            android:textColor="#29303B"
+            android:layout_marginStart="20dp"
+            android:text="View Privacy Policy"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:id="@+id/update"
+            android:layout_marginTop="20dp"
+            android:textColor="#29303B"
+            android:layout_marginStart="20dp"
+            android:text="Check for Updates"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:id="@+id/about"
+            android:layout_marginTop="20dp"
+            android:textColor="#29303B"
+            android:layout_marginStart="20dp"
+            android:text="About Quantmasters"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/logout"
+            android:layout_marginTop="15dp"
+            android:background="#fff"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="#EB5252"
+                android:typeface="sans"
+                android:id="@+id/title_note"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:elevation="5dp"
+                android:background="#F1F2F4"
+                android:layout_marginTop="15dp"
+                android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="#bdbdbd"
+                android:id="@+id/version"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:text="Quant Masters V2.0.0"
+                android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

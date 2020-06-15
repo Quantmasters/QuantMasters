@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Quant Masters</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_profile">Profile</string>
+    <string name="description">Media Controls</string>
+    <string name="title_activity_scrolling">Quant Masters</string>
+    <string name="whatsapp">You can post your doubts and queries here..We will clarify within 12 hours &#128515;</string>
+</resources>

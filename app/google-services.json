@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "677674499533",
+    "firebase_url": "https://quant-masters.firebaseio.com",
+    "project_id": "quant-masters",
+    "storage_bucket": "quant-masters.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677674499533:android:959a967ed55b9197ea9884",
+        "android_client_info": {
+          "package_name": "com.Quant.QuantMastersTrainingServices"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677674499533-32tl6iamjacbslph6ve8vqudvd5gbdnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPLxuVpO8WZFoyJW6V73mk6cmpGmeIj0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677674499533-32tl6iamjacbslph6ve8vqudvd5gbdnu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

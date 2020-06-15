@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E4E4E4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#fff"
+        android:paddingBottom="25dp">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Origin"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/option_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="11dp"
+                android:paddingEnd="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:textSize="18sp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="10dp"
+                android:text="Option One"
+                android:textColor="#0B182F"
+                 />
+
+            <RadioButton
+                android:id="@+id/option_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="10dp"
+                android:text="Option One"
+                android:clickable="true"
+                android:paddingEnd="10dp"
+                android:focusable="true"
+                android:textSize="18sp"
+                android:textColor="#0B182F" />
+
+            <RadioButton
+                android:id="@+id/option_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="10dp"
+                android:text="Option One"
+                android:textColor="#0B182F"
+                android:clickable="true"
+                android:paddingEnd="10dp"
+                android:focusable="true"
+
+                android:textSize="18sp"/>
+
+            <RadioButton
+                android:id="@+id/option_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Option One"
+                android:textColor="#0B182F"
+                android:clickable="true"
+                android:focusable="true"
+
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/option_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="10dp"
+                android:text="Option One"
+                android:paddingEnd="10dp"
+                android:textColor="#0B182F"
+                android:clickable="true"
+                android:focusable="true"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/instruction_layout"
+            android:visibility="gone"
+            android:layout_height="200dp">
+
+            <TextView
+                android:id="@+id/instruction_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="20dp"
+                android:text="1. Select the sp"
+                android:textColor="#0B182F"
+                android:textSize="21sp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Question_Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="20dp"
+            android:padding="9dp"
+            android:text="Q.1"
+            android:layout_below="@+id/instruction_layout"
+            android:textColor="#0B182F"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="20dp"
+            android:text="1. A boat is moving at a speed of 50 meters per minute"
+            android:textColor="#0B182F"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/Origin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Question"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="#0B182F"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@+id/Question_Number"
+            android:background="#bdbdbd" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
